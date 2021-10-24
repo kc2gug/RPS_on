@@ -45,7 +45,7 @@ def play_the_game(rpsp2):
 do_runrun=True
 while do_runrun:
     play_the_game(rpsp_dict)
-    play_again = input("=\n= Play Again?[Y/N] > ")
-    if play_again != "Y":
+    play_again = input("=\n= Play Again?[Y/N] > ").lower()
+    if play_again != "y":
         do_runrun=False
 
